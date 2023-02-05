@@ -72,7 +72,36 @@
         const cm = inch * 2.54
 
         //출력
-        alert(`${inch}inch는 ${cm}cm 입니다.`)
+        alert(`${inch} inch는 ${cm} cm 입니다.`)
+
+
+        //숫자 입력
+        const inputString = prompt("cm 단위의 숫자를 입력해주세요.")
+        
+        //입력을 숫자로 변경하고 inch 단위를 변경
+        const cm2 = Number(inputString)
+        const inch2 = cm2 * 0.393701
+
+        //출력
+        alert(`${cm2}cm는 ${inch2}inch 입니다.`)
+
+
+        //숫자를 입력
+        const inputString2 = prompt("원의 반지름을 입력해주세요.")
+        const cm3 = Number(inputString2)
+        
+        //출력
+        alert('원의 반지름: ' + cm3)
+        alert('원의 넓이: ' + cm3 * cm3 * 3.14)
+        alert('원의 둘레: ' + 2 * 3.14 * cm3)
+
+
+        //숫자를 입력 받는다
+        const inputUSD = prompt('달러 단위의 금액을 입려해주세요.')
+        
+        //출력
+        alert('달러: '+ inputUSD)
+        alert('원화: '+ inputUSD * 1207)
     </script>
 </head>
 <body>
