@@ -2,110 +2,125 @@
 <head>
     <title></title>
     <script>
-        // alert('hello world!')
-        console.log('hello world!');
-        console.log(`표현식 273 + 52의 값은 ${273+52}입니다...!`)
-        // if(1<2){
-        //     alert("1은 2보다 작습니다")
-        // } else {
-        //     alert("2는 1보다 작습니다")
-        // }
-        const pi = 3.131592
-        let name = "HamTory"
-        let name2 = "ghkdwndhks"
+        // // alert('hello world!')
+        // console.log('hello world!');
+        // console.log(`표현식 273 + 52의 값은 ${273+52}입니다...!`)
+        // // if(1<2){
+        // //     alert("1은 2보다 작습니다")
+        // // } else {
+        // //     alert("2는 1보다 작습니다")
+        // // }
+        // const pi = 3.131592
+        // let name = "HamTory"
+        // let name2 = "ghkdwndhks"
 
 
-        // let number = 10
-        // alert(number++)
-        // alert(++number)
-        // alert(number--)
-        // alert(--number)
+        // // let number = 10
+        // // alert(number++)
+        // // alert(++number)
+        // // alert(number--)
+        // // alert(--number)
             
-        //복합대입 연산자 활용
-        //변수 선언
-        let list = ''
-        //연산자를 사용
-        list += '<ul>'
-        list += '   <li>Hello</li>'
-        list += '   <li>JavaScript</li>'
-        list += '<ul>'
-        document.write(list)
+        // //복합대입 연산자 활용
+        // //변수 선언
+        // const ultag = document.querySelector("#ul")
+        // let list = ''
+        // //연산자를 사용
+        // list += '   <li>Hello</li>'
+        // list += '   <li>JavaScript</li>'
 
-        //복합 대입 연산자를 사용하지 않은 경우
+        // // //복합 대입 연산자를 사용하지 않은 경우
 
-        //상수를 선언
-        const list2 = '<ul><li>Hello</li><li>JavaScript...!</li><ul>'
-        document.write(list2)
+        // // //상수를 선언
+        // const list2 = '<li>Hello</li><li>JavaScript...!</li>'
 
-        //상수를 사용하지 않고 문서에 출력
-        document.write('<ul><li>Hello</li><li>JavaScript...!</li></ul>')
+        // ultag.appendChild(list2);
 
-        const r = 10
-        console.log(`넓이 = ${3.14 * r * r}`)
-        console.log(`둘래 = ${2 * 3.14 * r}`)
+        // const r = 10
+        // console.log(`넓이 = ${3.14 * r * r}`)
+        // console.log(`둘래 = ${2 * 3.14 * r}`)
 
-        let t
-        t = 10
-        console.log(`넓이 = ${3.14 * t * t}`)
-        console.log(`둘래 = ${2 * 3.14 * t}`)
+        // let t
+        // t = 10
+        // console.log(`넓이 = ${3.14 * t * t}`)
+        // console.log(`둘래 = ${2 * 3.14 * t}`)
 
-        let number2 = 10
-        console.log(++number2)
-        console.log(number2++)
-        console.log(++number2)
-        console.log(number2--)
-        //문자열 입력
-        // const inputString = prompt('message')
-        // alert(inputString)
+        // let number2 = 10
+        // console.log(++number2)
+        // console.log(number2++)
+        // console.log(++number2)
+        // console.log(number2--)
+        // //문자열 입력
+        // // const inputString = prompt('message')
+        // // alert(inputString)
 
-        //불 입력
-        const inputBoolean = confirm('수락하시겠습니다?')
+        // //불 입력
+        // const inputBoolean = confirm('수락하시겠습니다?')
 
-        //숫자 자료형으로 변환하기
-        Number("123")
+        // //숫자 자료형으로 변환하기
+        // Number("123")
 
-        //inch단위를 cm단위로 변경하기
-        const rawInput = prompt('inch 단위의 숫자를 입력해주세요.')
+        // //inch단위를 cm단위로 변경하기
+        // const rawInput = prompt('inch 단위의 숫자를 입력해주세요.')
         
-        //입력받은 데이터를 숫자형으로 변경하고 cm단위로 변경
-        const inch = Number(rawInput)
-        const cm = inch * 2.54
+        // //입력받은 데이터를 숫자형으로 변경하고 cm단위로 변경
+        // const inch = Number(rawInput)
+        // const cm = inch * 2.54
 
-        //출력
-        alert(`${inch} inch는 ${cm} cm 입니다.`)
+        // //출력
+        // alert(`${inch} inch는 ${cm} cm 입니다.`)
 
 
-        //숫자 입력
-        const inputString = prompt("cm 단위의 숫자를 입력해주세요.")
+        // //숫자 입력
+        // const inputString = prompt("cm 단위의 숫자를 입력해주세요.")
         
-        //입력을 숫자로 변경하고 inch 단위를 변경
-        const cm2 = Number(inputString)
-        const inch2 = cm2 * 0.393701
+        // //입력을 숫자로 변경하고 inch 단위를 변경
+        // const cm2 = Number(inputString)
+        // const inch2 = cm2 * 0.393701
 
-        //출력
-        alert(`${cm2}cm는 ${inch2}inch 입니다.`)
+        // //출력
+        // alert(`${cm2}cm는 ${inch2}inch 입니다.`)
 
 
-        //숫자를 입력
-        const inputString2 = prompt("원의 반지름을 입력해주세요.")
-        const cm3 = Number(inputString2)
+        // //숫자를 입력
+        // const inputString2 = prompt("원의 반지름을 입력해주세요.")
+        // const cm3 = Number(inputString2)
         
-        //출력
-        alert('원의 반지름: ' + cm3)
-        alert('원의 넓이: ' + cm3 * cm3 * 3.14)
-        alert('원의 둘레: ' + 2 * 3.14 * cm3)
+        // //출력
+        // alert('원의 반지름: ' + cm3)
+        // alert('원의 넓이: ' + cm3 * cm3 * 3.14)
+        // alert('원의 둘레: ' + 2 * 3.14 * cm3)
 
 
-        //숫자를 입력 받는다
-        const inputUSD = prompt('달러 단위의 금액을 입려해주세요.')
+        // //숫자를 입력 받는다
+        // const inputUSD = prompt('달러 단위의 금액을 입려해주세요.')
         
-        //출력
-        alert('달러: '+ inputUSD)
-        alert('원화: '+ inputUSD * 1207)
+        // //출력
+        // alert('달러: '+ inputUSD)
+        // alert('원화: '+ inputUSD * 1207)
+
+        let a = 10
     </script>
 </head>
 <body>
+    <ul id="ul">
+    </ul>
+
+
     <script>
+        const ultag = document.querySelector("#ul")
+        let list = ''
+        //연산자를 사용
+        list += '   <li>Hello</li>'
+        list += '   <li>JavaScript</li>'
+
+        // //복합 대입 연산자를 사용하지 않은 경우
+
+        // //상수를 선언
+        const list2 = createElement('ul')
+        list2.textContent = 'Hello World'
+
+        ultag.appendChild(list2);
     </script>
 </body>
 </html>
