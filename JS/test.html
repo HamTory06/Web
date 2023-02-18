@@ -124,11 +124,61 @@
         // }
         // const result = input >= 0 ? '0이상의 숫자입니다.' : '0보다 작은 숫자입니다'
         // alert(result)
-        const rawInput = prompt('태어난 해를 입력해주세요.','')
-        const year = Number(rawInput)
-        const tti = '원숭이,닭,돼지,쥐,소,호랑이,토끼,용,뱀,말,양'.split(',')
+        // const rawInput = prompt('태어난 해를 입력해주세요.','')
+        // const year = Number(rawInput)
+        // const tti = '원숭이,닭,돼지,쥐,소,호랑이,토끼,용,뱀,말,양'.split(',')
 
-        alert(`${year}년에 태어났다면 ${tti[year%12]} 띠 입니다`)
+        // alert(`${year}년에 태어났다면 ${tti[year%12]} 띠 입니다`)
+        // true || alert('A출력')
+        // true && alert('A 출력')
+        const todos = ["우유 구매", "업무 메일 확인하기", "필라테스 수업"]
+        let add = 0
+        // for(const i in todos){
+        //     console.log(`${i}번째 할일: ${todos[i]}`)
+        // }
+        // for(todo of todos){
+        //     console.log(`오늘의 할 일:${todo}`)
+        // }
+        for(let i = 1; i<= 100; i++){
+            add+=i
+        }
+        console.log(`1~100까지 숫자를 모두 더하면 ${add}입니다`)
+        // while(confirm('계속 진행하시겠습니까?')){
+        //     i+=1
+        //     alert(`${i}번째 반복입니다`)
+        // }
+        // let i = 0
+        // const array = [1,2,3,4,5]
+        // while(i < array.length){
+        //     console.log(`${i} : ${array[i]}`)
+        //     i++
+        // }
+        // for(let i = 0; true; i++){
+        //     alert(i + `번째 반복문입니다.`)
+            
+        //     //진행 여부를 물어봅니다.
+        //     const isContinue = confirm("계속 하시겠습니다?")
+        //     if(!isContinue)
+        //         break
+        // }
+        // alert("프로그램 종료")
+        // let output = 0
+        // for(let i = 0; i < 10; i++){
+        //     if(i%2 == 1){
+        //         // 홀수면 현재 반복을 중지하고 다음 반복을 수행합니다.
+        //         continue
+        //     }
+        //     output+=1
+        // }
+        // alert(output)
+        let output = ""
+        for(let i = 1; i<10; i++){
+            for(let j = 0; j<i; j++){
+                output + "*"
+            }
+            output + "\n"
+        }
+        alert(`${output}`)
     </script>
 </head>
 <body>
@@ -137,19 +187,19 @@
 
 
     <script>
-        const ultag = document.querySelector("#ul")
-        let list = ''
-        //연산자를 사용
-        list += '   <li>Hello</li>'
-        list += '   <li>JavaScript</li>'
+        // const ultag = document.querySelector("#ul")
+        // let list = ''
+        // //연산자를 사용
+        // list += '   <li>Hello</li>'
+        // list += '   <li>JavaScript</li>'
 
-        // //복합 대입 연산자를 사용하지 않은 경우
+        // // //복합 대입 연산자를 사용하지 않은 경우
 
-        // //상수를 선언
-        const list2 = createElement('ul')
-        list2.textContent = 'Hello World'
+        // // //상수를 선언
+        // const list2 = createElement('ul')
+        // list2.textContent = 'Hello World'
 
-        ultag.appendChild(list2);
+        // ultag.appendChild(list2);
     </script>
 </body>
 </html>
